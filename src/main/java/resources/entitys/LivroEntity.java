@@ -23,6 +23,6 @@ public class LivroEntity {
     private String titulo;
     private String autor;
     private String editora;
-    private int anoLancamento;
+    private Integer anoLancamento;
 
 }
