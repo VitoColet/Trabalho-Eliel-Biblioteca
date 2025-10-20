@@ -27,7 +27,7 @@ public class LivroController {
         return ResponseEntity.ok().build();
     }
 
-    @PutMapping (value = "/id")
+    @PutMapping (value = "/{id}")
     public ResponseEntity<Void> putRequest(@PathVariable Integer id, @RequestBody LivroEntity livro){
         service.Update(id, livro);
         return ResponseEntity.ok().build();
