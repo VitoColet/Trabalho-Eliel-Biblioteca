@@ -1,4 +1,4 @@
-package resources.entitys;
+package biblioteca.biblioteca.resources.entitys;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -6,12 +6,12 @@ import lombok.*;
 import java.util.Date;
 
 @Entity
+@Table (name = "livro")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table (name = "livro")
 public class LivroEntity {
 
     @Id

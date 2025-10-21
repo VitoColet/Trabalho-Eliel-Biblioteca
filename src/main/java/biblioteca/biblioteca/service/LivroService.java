@@ -1,17 +1,18 @@
-package service;
+package biblioteca.biblioteca.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.annotation.AccessType;
-import resources.entitys.LivroEntity;
-import resources.repository.LivroRepository;
+import org.springframework.stereotype.Service;
+import biblioteca.biblioteca.resources.entitys.LivroEntity;
+import biblioteca.biblioteca.resources.repository.LivroRepository;
 
+@Service
 public class LivroService {
 
     @Autowired
     private LivroRepository repository;
 
     public void Create(LivroEntity livro) {
-        repository.saveAndFlush(livro);
+        repository.save(livro);
     }
 
     public LivroEntity Find(Integer id){
